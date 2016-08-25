@@ -1191,6 +1191,8 @@ body {
  
  .left-align{text-align:left;}
  .fullw{width:100%;}
+
+.reveal section img.nostyles{border:0px !important;background:transparent !important;box-shadow:none !important;}
  
  .reveal ul li{line-height:1.5em;}
  .reveal pre code{line-height:1.5em;}
