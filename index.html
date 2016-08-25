@@ -90,7 +90,7 @@
 				<h2>Topics covered</h2>
 				<ul class="left-align">
 				<li>Twitter <a class="cred">Bootstrap</a></li>
-				<li>Introduction to <a class="cred">WordPress</a></li>
+				<li>Digging out <a class="cred">WordPress</a></li>
 				<li>Building Web Pages with <a class="cred">Visual Composer</a></li>
 				<li><a class="cred">Professional</a> WordPress Development</li>
 				</ul>
@@ -118,8 +118,74 @@
 					<li><a class="cred">Responsive</a> features</li>
 					<li><a class="cred">Mobile-first</a> approach</li>
 					<li>Browser <a class="cred">compatibility</a></li>
-					
 				</ul>
+			</section>
+
+			<section>
+				<h2>Bootstrap Installation</h2>
+				<p class="left-align">Download Bootstrap-3.3.7 from <a href="http://getbootstrap.com/getting-started">http://getbootstrap.com/getting-started</a> or <a href="https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip">from link here</a>.</p>
+				<pre><code data-trim>
+bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.css.map
+│   ├── bootstrap.min.css
+│   ├── bootstrap.min.css.map
+│   ├── bootstrap-theme.css
+│   ├── bootstrap-theme.css.map
+│   ├── bootstrap-theme.min.css
+│   └── bootstrap-theme.min.css.map
+├── js/
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+└── fonts/
+    ├── glyphicons-halflings-regular.eot
+    ├── glyphicons-halflings-regular.svg
+    ├── glyphicons-halflings-regular.ttf
+    ├── glyphicons-halflings-regular.woff
+    └── glyphicons-halflings-regular.woff2
+				</code></pre>
+			</section>
+
+			<section>
+				<h2>Basic Template</h2>
+				<p class="">Let's start by creating a basic template.</p>
+				<pre><code data-trim>
+&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html lang=&#x22;en&#x22;&#x3E;
+&#x3C;head&#x3E;
+&#x9;&#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;
+&#x9;&#x3C;meta http-equiv=&#x22;X-UA-Compatible&#x22; content=&#x22;IE=edge&#x22;&#x3E;
+&#x9;&#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1&#x22;&#x3E;
+&#x9;&#x3C;title&#x3E;Bootstrap 101 Template&#x3C;/title&#x3E;
+
+&#x9;&#x3C;link href=&#x22;css/bootstrap.min.css&#x22; rel=&#x22;stylesheet&#x22;&#x3E;
+
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+&#x9;&#x3C;h1&#x3E;Hello, world!&#x3C;/h1&#x3E;
+
+&#x9;&#x3C;script src=&#x22;https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x9;&#x3C;script src=&#x22;js/bootstrap.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+				</code></pre>
+			</section>
+
+			<section>
+				<h2>Mobile first</h2>
+				<ul class="left-left">
+					<li>Optional mobile friendly styles.</li>
+					<li>To ensure proper rendering and touch zooming</li>
+				</ul>
+				<pre><code data-trim>
+&#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1&#x22;&#x3E;
+				</code></pre>
+
+				<p>To disable zooming capabilities on mobile</p>
+				<pre><code data-trim>
+maximum-scale=1, user-scalable=no
+				</code></pre>
 			</section>
 
 			<section>
