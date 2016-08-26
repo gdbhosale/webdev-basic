@@ -783,10 +783,108 @@ display: block; </code></pre>
 				<h2>Components</h2>
 			</section>
 
+			<section>
+				<h2>Glyphicons</h2>
+				<small>Includes over 250 glyphs in font format</small>
+				<img src="images/slides/bootstrap_glyphicons.png" style="width:100%;">
+				<a class="cwhite" target="_blank" href="http://getbootstrap.com/components/#glyphicons">getbootstrap.com/components/#glyphicons</a>
+			</section>
 
+			<section>
+				<h2>Glyphicons Usage</h2>
+				<img src="images/slides/bootstrap_glyphicons_usage1.png">
+				<pre><code data-trim class="html" contenteditable>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; aria-label=&quot;Left Align&quot;&gt;
+  &lt;span class=&quot;glyphicon glyphicon-align-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
 
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot;&gt;
+  &lt;span class=&quot;glyphicon glyphicon-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Star
+&lt;/button&gt;
+				</code></pre>
+			</section>
 
+			<section>
+				<h2>Dropdowns</h2>
+				<img src="images/slides/bootstrap_dropdown_1.png">
+			</section>
 
+			<section>
+				<h2>Dropdowns</h2>
+				<pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn btn-default dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu1&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;true&quot;&gt;
+    Dropdown
+    &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenu1&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&#x9;&lt;li class=&quot;dropdown-header&quot;&gt;Dropdown header&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+				</code></pre>
+			</section>
+
+			<section>
+				<h2>Button Groups</h2>
+				<img src="images/slides/bootstrap_button_groups_1.png">
+				<pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+				</code></pre>
+			</section>
+
+			<section>
+				<h2>Button Toolbar</h2>
+				<img src="images/slides/bootstrap_button_toolbar_1.png">
+				<pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;btn-toolbar&quot; role=&quot;toolbar&quot; aria-label=&quot;...&quot;&gt;
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+				</code></pre>
+			</section>
+
+			<section>
+				<h2>Button Groups sizes</h2>
+				<img src="images/slides/bootstrap_button_groups_sizes.png">
+				<pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;btn-group btn-group-lg&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;btn-group btn-group-sm&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;btn-group btn-group-xs&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;
+				</code></pre>
+			</section>
+
+			<section>
+				<h2>Nesting Button Groups</h2>
+				<img src="images/slides/bootstrap_button_group_nesting.png">
+				<pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;1&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;2&lt;/button&gt;
+
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+      Dropdown
+      &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+				</code></pre>
+			</section>
 			
    
 
