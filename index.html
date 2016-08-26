@@ -490,21 +490,6 @@ Use the mark element to &lt;mark&gt;highlight&lt;/mark&gt; text.
 			</section>
 
 			<section>
-				<h2>Tables</h2>
-				<small>Contextual classes for rows</small><br>
-				<img src="images/slides/bootstrap_table_color.png" style="margin:0px;">
-				<pre><code data-trim class="html">
-&lt;tbody&gt;
-  &lt;tr class=&quot;active&quot;&gt; &lt;th&gt;.active&lt;/th&gt; &lt;td&gt;Mark&lt;/td&gt; &lt;td&gt;Otto&lt;/td&gt;&lt;/tr&gt;
-  &lt;tr class=&quot;success&quot;&gt; &lt;th&gt;.success&lt;/th&gt; &lt;td&gt;Jacob&lt;/td&gt; &lt;td&gt;Thornton&lt;/td&gt;&lt;/tr&gt;
-  &lt;tr class=&quot;info&quot;&gt; &lt;th&gt;.info&lt;/th&gt; &lt;td&gt;Larry&lt;/td&gt; &lt;td&gt;the Bird&lt;/td&gt;&lt;/tr&gt;
-  &lt;tr class=&quot;warning&quot;&gt; &lt;th&gt;.active&lt;/th&gt; &lt;td&gt;Mark&lt;/td&gt; &lt;td&gt;Otto&lt;/td&gt;&lt;/tr&gt;
-  &lt;tr class=&quot;danger&quot;&gt; &lt;th&gt;.success&lt;/th&gt; &lt;td&gt;Jacob&lt;/td&gt; &lt;td&gt;Thornton&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-				</code></pre>
-			</section>
-
-			<section>
 				<h2><a class="cred">More Table Customizations</a></h2>
 				<table>
 					<tbody>
@@ -528,9 +513,86 @@ Use the mark element to &lt;mark&gt;highlight&lt;/mark&gt; text.
 				</table>
 			</section>
 
+			<section>
+				<h2>Tables</h2>
+				<small>Contextual classes for rows</small><br>
+				<img src="images/slides/bootstrap_table_color.png" style="margin:0px;">
+				<pre><code data-trim class="html" contenteditable>
+&lt;tbody&gt;
+  &lt;tr class=&quot;active&quot;&gt; &lt;th&gt;.active&lt;/th&gt; &lt;td&gt;Mark&lt;/td&gt; &lt;td&gt;Otto&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr class=&quot;success&quot;&gt; &lt;th&gt;.success&lt;/th&gt; &lt;td&gt;Jacob&lt;/td&gt; &lt;td&gt;Thornton&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr class=&quot;info&quot;&gt; &lt;th&gt;.info&lt;/th&gt; &lt;td&gt;Larry&lt;/td&gt; &lt;td&gt;the Bird&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr class=&quot;warning&quot;&gt; &lt;th&gt;.active&lt;/th&gt; &lt;td&gt;Mark&lt;/td&gt; &lt;td&gt;Otto&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr class=&quot;danger&quot;&gt; &lt;th&gt;.success&lt;/th&gt; &lt;td&gt;Jacob&lt;/td&gt; &lt;td&gt;Thornton&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+				</code></pre>
+			</section>
 
+			<section>
+				<h2>Forms</h2>
+				<small>Simple Form</small><br>
+				<img src="images/slides/bootstrap_form_simple.png">
+			</section>
 
+			<section>
+				<h3>Simple Form Code</h3>
+				<pre><code data-trim class="html" style="min-height:550px;min-width:900px;" contenteditable>
+&lt;form&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;exampleInputEmail1&quot;&gt;Email address&lt;/label&gt;
+    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; placeholder=&quot;Email&quot;&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;
+    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;Password&quot;&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot;&gt; Remember me
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+				</code></pre>
+			</section>
 
+			<section>
+				<h2>Forms</h2>
+				<small>Horizontal Form</small><br>
+				<img src="images/slides/bootstrap_form_horizontal.png">
+			</section>
+
+			<section>
+				<h3>Horizontal Form Code</h3>
+				<pre><code data-trim class="html" style="min-height:550px;min-width:900px;" contenteditable>
+&lt;form class=&quot;form-horizontal&quot;&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2 control-label&quot;&gt;Email&lt;/label&gt;
+    &lt;div class=&quot;col-sm-10&quot;&gt;
+      &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail3&quot; placeholder=&quot;Email&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;inputPassword3&quot; class=&quot;col-sm-2 control-label&quot;&gt;Password&lt;/label&gt;
+    &lt;div class=&quot;col-sm-10&quot;&gt;
+      &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword3&quot; placeholder=&quot;Password&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;
+      &lt;div class=&quot;checkbox&quot;&gt;
+        &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Remember me&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Sign in&lt;/button&gt; &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+				</code></pre>
+			</section>
 
 
 
