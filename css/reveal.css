@@ -1189,6 +1189,11 @@ body {
  .cblue{color:#42AFFA !important;}
  .cwhite{color:#FFF !important;}
  
+ .reveal pre.large {
+    width: 130%;
+    margin-left: -15%;
+ }
+ 
  .left-align{text-align:left;}
  .fullw{width:100%;}
  .text-center{text-align: center !important;}
