@@ -739,6 +739,16 @@ display: block; </code></pre>
 			</section>
 
 			<section>
+				<h2>Thumbnails</h2>
+				<img src="images/slides/bootstrap_thumbnails_1.png">
+				<pre><code data-trim class="html" contenteditable>
+&lt;a href=&quot;#&quot; class=&quot;thumbnail&quot;&gt;
+    &lt;img src=&quot;http://placehold.it/140x140&quot;&gt;
+&lt;/a&gt;
+				</code></pre>
+			</section>
+
+			<section>
 				<h2>Quick floats</h2>
 				<pre><code data-trim class="html" contenteditable>
 &lt;div class=&quot;pull-left&quot;&gt;...&lt;/div&gt;
@@ -1123,6 +1133,109 @@ display: block; </code></pre>
   &lt;p&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
   &lt;p&gt;&lt;a class=&quot;btn btn-primary btn-lg&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn more&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
+				</code></pre>
+			</section>
+
+			<section>
+				<h2><a class="cred">Custom content</a></h2>
+				<img src="images/slides/bootstrap_custom_content.png">
+			</section>
+
+			<section>
+				<h2><a class="cred">Custom content</a></h2>
+				<pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-sm-6 col-md-4&quot;&gt;
+    &lt;div class=&quot;thumbnail&quot;&gt;
+      &lt;img src=&quot;http://placehold.it/242x200&quot; alt=&quot;...&quot;&gt;
+      &lt;div class=&quot;caption&quot;&gt;
+        &lt;h3&gt;Thumbnail label&lt;/h3&gt;
+        &lt;p&gt;...&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;Button&lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;btn btn-default&quot; role=&quot;button&quot;&gt;Button&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+				</code></pre>
+			</section>
+
+			<section>
+				<h2><a class="cred">Alerts</a></h2>
+				<img src="images/slides/bootstrap_alerts_1.png">
+				<pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;...&lt;/div&gt;
+				</code></pre>
+			</section>
+			
+			<section>
+				<h2><a class="cred">Progress bars</a></h2>
+				<img src="images/slides/bootstrap_progress_bars.png">
+				<pre><code data-trim class="html" contenteditable>
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%;&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;60% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+				</code></pre>
+			</section>
+
+			<section>
+				<h2><a class="cred">Progress bars with Label</a></h2>
+				<img src="images/slides/bootstrap_progress_bars_label.png">
+				<pre><code data-trim class="html" contenteditable style="max-height:300px;">
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 40%&quot;&gt;
+    &lt;span&gt;40% Complete (success)&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-info&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 20%&quot;&gt;
+    &lt;span&gt;20% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%&quot;&gt;
+    &lt;span&gt;60% Complete (warning)&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;80&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 80%&quot;&gt;
+    &lt;span&gt;80% Complete (danger)&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+				</code></pre>
+			</section>
+
+			<section>
+				<h2><a class="cred">List group</a></h2>
+				<img src="images/slides/bootstrap_list_group_items.png" width=350>
+				<pre><code data-trim class="html" contenteditable style="max-height:150px;">
+&lt;ul class=&quot;list-group&quot;&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;simple list group item&lt;/li&gt;
+  &lt;li class=&quot;list-group-item active&quot;&gt;active list group item&lt;/li&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;list group item with badge &lt;span class=&quot;badge&quot;&gt;14&lt;/span&gt;&lt;/li&gt;
+  &lt;li class=&quot;list-group-item disabled&quot;&gt;.disabled&lt;/li&gt;
+  &lt;li class=&quot;list-group-item list-group-item-success&quot;&gt;.list-group-item-success&lt;/li&gt;
+  &lt;li class=&quot;list-group-item list-group-item-info&quot;&gt;.list-group-item-info&lt;/li&gt;
+  &lt;li class=&quot;list-group-item list-group-item-warning&quot;&gt;.list-group-item-warning&lt;/li&gt;
+  &lt;li class=&quot;list-group-item list-group-item-danger&quot;&gt;.list-group-item-danger&lt;/li&gt;
+&lt;/ul&gt;
+				</code></pre>
+			</section>
+
+			<section>
+				<h2><a class="cred">List group - Custom content</a></h2>
+				<img src="images/slides/bootstrap_list_group_custom.png" width=400>
+				<pre><code data-trim class="html" contenteditable style="max-height:200px;">
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    <h4 class="list-group-item-heading">List group item heading</h4>
+    <p class="list-group-item-text">...</p>
+  </a>
+</div>
 				</code></pre>
 			</section>
 			
