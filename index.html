@@ -196,7 +196,7 @@ bootstrap/
 			<section>
 				<h2>Basic Template</h2>
 				<p class="">Let's start by creating a basic template.</p>
-				<pre><code data-trim class="html">
+				<pre><code data-trim class="html" contenteditable>
 &#x3C;!DOCTYPE html&#x3E;
 &#x3C;html lang=&#x22;en&#x22;&#x3E;
 &#x3C;head&#x3E;
@@ -270,7 +270,7 @@ maximum-scale=1, user-scalable=no
 
 			<section>
 				<h2>Basic Structure of a Bootstrap Grid</h2>
-				<pre><code data-trim class="html">
+				<pre><code data-trim class="html" contenteditable>
 &#x3C;div class=&#x22;row&#x22;&#x3E;
 &#x9;&#x3C;div class=&#x22;col-md-12&#x22;&#x3E;&#x3C;/div&#x3E;
 &#x3C;/div&#x3E;
@@ -327,7 +327,7 @@ maximum-scale=1, user-scalable=no
 
 			<section>
 				<h4>Example: Desktop &amp; Mobile</h4>
-				<pre><code data-trim class="html" style="font-size:18px;">
+				<pre><code data-trim class="html" style="font-size:18px;" contenteditable>
 &#x3C;div class=&#x22;row&#x22;&#x3E;
   &#x3C;div class=&#x22;col-xs-12 col-md-8&#x22;&#x3E;.col-xs-12 .col-md-8&#x3C;/div&#x3E;
   &#x3C;div class=&#x22;col-xs-6 col-md-4&#x22;&#x3E;.col-xs-6 .col-md-4&#x3C;/div&#x3E;
@@ -369,7 +369,7 @@ maximum-scale=1, user-scalable=no
 			<section>
 				<h4><a class="cred">&#x3C;mark&#x3E;</a></h4>
 				<p>Use the mark element to <mark>highlight</mark> text.</p>
-				<pre><code data-trim class="html">
+				<pre><code data-trim class="html" contenteditable>
 Use the mark element to &lt;mark&gt;highlight&lt;/mark&gt; text.
 				</code></pre>
 			</section>
@@ -378,21 +378,115 @@ Use the mark element to &lt;mark&gt;highlight&lt;/mark&gt; text.
 				<h4><a class="cred">Strikethrough / Deleted Text</a></h4>
 				<s>This line of text is meant to be treated as no longer accurate.</s>
 				<del>This line of text is meant to be treated as deleted text.</del>
-				<pre><code data-trim class="html">
+				<pre><code data-trim class="html" contenteditable>
 &lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;
 &lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;
+				</code></pre>
+			</section>
+
+			<section>
+				<h4>Text <a class="cred">Alignment</a> classes</h4>
+				<img src="images/slides/bootstrap_alignment.png" >
+				<pre><code data-trim class="html" contenteditable>
+&lt;p class=&quot;text-left&quot;&gt;Left aligned text.&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;Center aligned text.&lt;/p&gt;
+&lt;p class=&quot;text-right&quot;&gt;Right aligned text.&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Justified text.&lt;/p&gt;
+&lt;p class=&quot;text-nowrap&quot;&gt;No wrap text.&lt;/p&gt;
+				</code></pre>
+			</section>
+
+			<section>
+				<h4>Text <a class="cred">Alignment</a> classes</h4>
+				<img src="images/slides/bootstrap_lettercase.png" >
+				<pre><code data-trim class="html" contenteditable>
+&lt;p class=&quot;text-lowercase&quot;&gt;Lowercased text.&lt;/p&gt;
+&lt;p class=&quot;text-uppercase&quot;&gt;Uppercased text.&lt;/p&gt;
+&lt;p class=&quot;text-capitalize&quot;&gt;Capitalized text.&lt;/p&gt;
 				</code></pre>
 			</section>
 
 			
 
 			<section>
-				<h4>ABBREVIATIONS</h4>
-				<p>Bootstrap will style the HTML  <a class="cred"> "abbr" </a> element in the following way: </p>
-				<p>The abbr element is used to mark up an abbreviation or acronym:</p>
-				<p>The <abbr>WHO</abbr> was founded in 1948.</p>
-					
+				<h4>Blockquotes</h4>
+				<img src="images/slides/bootstrap_blockquote.png" >
+				
+				<pre><code data-trim class="html" contenteditable>
+&lt;blockquote&gt;
+&#x9;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+&#x9;&lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+				</code></pre>
 			</section>
+
+			<section>
+				<h2>Descriptions</h2>
+				<img src="images/slides/bootstrap_descriptions.png" style="margin:0px;">
+				<pre><code data-trim class="html" contenteditable>
+&lt;dl&gt;
+&#x9;&lt;dt&gt;Description lists&lt;/dt&gt;
+&#x9;&lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;
+&#x9;&lt;dt&gt;Euismod&lt;/dt&gt;
+&#x9;&lt;dd&gt;Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.&lt;/dd&gt;
+&#x9;&lt;dd&gt;Donec id elit non mi porta gravida at eget metus.&lt;/dd&gt;
+&#x9;&lt;dt&gt;Malesuada porta&lt;/dt&gt;
+&#x9;&lt;dd&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/dd&gt;
+&lt;/dl&gt;
+				</code></pre>
+			</section>
+
+			<section>
+				<h2>Descriptions</h2>
+				<small>Horizonal</small>
+				<img src="images/slides/bootstrap_descriptions_horizontal.png" style="margin:0px;">
+				<pre><code data-trim class="html" contenteditable>
+&lt;dl class="dl-horizontal"&gt;
+&#x9;&lt;dt&gt;Description lists&lt;/dt&gt;
+&#x9;&lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;
+&#x9;&lt;dt&gt;Euismod&lt;/dt&gt;
+&#x9;&lt;dd&gt;Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.&lt;/dd&gt;
+&#x9;&lt;dd&gt;Donec id elit non mi porta gravida at eget metus.&lt;/dd&gt;
+&#x9;&lt;dt&gt;Malesuada porta&lt;/dt&gt;
+&#x9;&lt;dd&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/dd&gt;
+&lt;/dl&gt;
+				</code></pre>
+			</section>
+
+			<section>
+				<h2>Tables</h2>
+				<small>Basic example</small>
+				<img src="images/slides/bootstrap_table.jpg" style="margin:0px;">
+				<pre><code data-trim class="html" contenteditable>
+&lt;dl class="dl-horizontal"&gt;
+&#x9;&lt;dt&gt;Description lists&lt;/dt&gt;
+&#x9;&lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;
+&#x9;&lt;dt&gt;Euismod&lt;/dt&gt;
+&#x9;&lt;dd&gt;Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.&lt;/dd&gt;
+&#x9;&lt;dd&gt;Donec id elit non mi porta gravida at eget metus.&lt;/dd&gt;
+&#x9;&lt;dt&gt;Malesuada porta&lt;/dt&gt;
+&#x9;&lt;dd&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/dd&gt;
+&lt;/dl&gt;
+				</code></pre>
+			</section>
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 			<section>
 				<h2>Example</h2>
