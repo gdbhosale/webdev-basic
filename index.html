@@ -196,7 +196,7 @@ bootstrap/
 			<section>
 				<h2>Basic Template</h2>
 				<p class="">Let's start by creating a basic template.</p>
-				<pre><code data-trim>
+				<pre><code data-trim class="html">
 &#x3C;!DOCTYPE html&#x3E;
 &#x3C;html lang=&#x22;en&#x22;&#x3E;
 &#x3C;head&#x3E;
@@ -224,7 +224,7 @@ bootstrap/
 					<li>Optional mobile friendly styles.</li>
 					<li>To ensure proper rendering and touch zooming</li>
 				</ul>
-				<pre><code data-trim>
+				<pre><code data-trim class="html">
 &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1&#x22;&#x3E;
 				</code></pre>
 
@@ -237,14 +237,14 @@ maximum-scale=1, user-scalable=no
 			<section>
 				<h2>Containers</h2>
 				<h5>Responsive <a class="cred">fixed-width</a> container</h5>
-				<pre><code data-trim>
+				<pre><code data-trim class="html">
 &#x3C;div class=&#x22;container&#x22;&#x3E;
   ...
 &#x3C;/div&#x3E;
 				</code></pre>
 
 				<h5><a class="cred">full-width</a> container</h5>
-				<pre><code data-trim>
+				<pre><code data-trim class="html">
 &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
   ...
 &#x3C;/div&#x3E;
@@ -263,83 +263,128 @@ maximum-scale=1, user-scalable=no
 			<section>
 				<h2>Bootstrap Grid System</h2>
 
-				<p class="left-align">Bootstrap's grid system allows up to 12 columns across the page.</p>
-				<p class="left-align">If you do not want to use all 12 columns individually, you can group the columns together to create wider columns.</p>
-
+				<p class="left-align">Bootstrap's grid system allows up to <a class="cred">12 columns</a> across the page.</p>
+				
 				<img src="images/slides/bootstrap_grid_system.png" >
 			</section>
 
 			<section>
-				<h2>Grid Classes</h2>
-				<ul class="left-left">
-					<li>xs (for phones)</li>
-					<li>sm (for tablets)</li>
-					<li>md (for desktops)</li>
-					<li>lg (for larger desktops)</li>
-					<P>The classes above can be combined to create more dynamic and flexible layouts.</P>
-				</ul>
-			</section>
-
-			<section>
 				<h2>Basic Structure of a Bootstrap Grid</h2>
-				<pre><code data-trim>
-<div class="row">
-	<div class="col-*-*"></div>
-</div>
-<div class="row">
-	<div class="col-*-*"></div>
-	<div class="col-*-*"></div>
-	<div class="col-*-*"></div>
-</div>
-<div class="row">
-	...
-</div>
+				<pre><code data-trim class="html">
+&#x3C;div class=&#x22;row&#x22;&#x3E;
+&#x9;&#x3C;div class=&#x22;col-md-12&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;row&#x22;&#x3E;
+&#x9;&#x3C;div class=&#x22;col-md-5&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x9;&#x3C;div class=&#x22;col-md-5&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x9;&#x3C;div class=&#x22;col-md-2&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;row&#x22;&#x3E;
+&#x9;...
+&#x3C;/div&#x3E;
 				</code></pre>
 			</section>
 
 			<section>
-				<h2>Bootstrap Text/Typography</h2>
-				<h3>Bootstrap's Default Settings</h3>
+				<h2><a class="cred">Grid Classes</a></h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Extra small</th>
+							<th>Small Tablets</th>
+							<th>Medium Desktops</th>
+							<th>Large Desktops</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="text-center"> &lt; 768px</td>
+							<td class="text-center">≥ 768px</td>
+							<td class="text-center">≥ 992px</td>
+							<td class="text-center">≥ 1200px</td>
+						</tr>
+						<tr>
+							<td class="text-center">.col-<a class="cred">xs</a>-</td>
+							<td class="text-center">.col-<a class="cred">sm</a>-</td>
+							<td class="text-center">.col-<a class="cred">md</a>-</td>
+							<td class="text-center">.col-<a class="cred">lg</a>-</td>
+						</tr>
+						<tr>
+							<td class="text-center">None (Auto)</td>
+							<td class="text-center">750px</td>
+							<td class="text-center">970px</td>
+							<td class="text-center">1170px</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
 
-				<p class="left-align">Bootstrap's global default font-size is 14px, with a line-height of 1.428.</p>
+			<section>
+				<h4>Example: Desktop &amp; Mobile</h4>
+				<img src="images/slides/bootstrap_grid_system_ex1.png" width="700">
+				<img src="images/slides/bootstrap_grid_system_ex1-2.png" width="700">
+			</section>
+
+			<section>
+				<h4>Example: Desktop &amp; Mobile</h4>
+				<pre><code data-trim class="html" style="font-size:18px;">
+&#x3C;div class=&#x22;row&#x22;&#x3E;
+  &#x3C;div class=&#x22;col-xs-12 col-md-8&#x22;&#x3E;.col-xs-12 .col-md-8&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;col-xs-6 col-md-4&#x22;&#x3E;.col-xs-6 .col-md-4&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;div class=&#x22;row&#x22;&#x3E;
+  &#x3C;div class=&#x22;col-xs-6 col-md-4&#x22;&#x3E;.col-xs-6 .col-md-4&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;col-xs-6 col-md-4&#x22;&#x3E;.col-xs-6 .col-md-4&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;col-xs-6 col-md-4&#x22;&#x3E;.col-xs-6 .col-md-4&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;div class=&#x22;row&#x22;&#x3E;
+  &#x3C;div class=&#x22;col-xs-6&#x22;&#x3E;.col-xs-6&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;col-xs-6&#x22;&#x3E;.col-xs-6&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+				</code></pre>
+			</section>
+
+			<section>
+				<h2>Typography</h2>
+				
+				<p class="left-align">Bootstrap's global default font-size is <a class="cred">14px</a>, with a line-height of <a class="cred">1.428</a>.</p>
 				<p class="left-align">This is applied to the <a class="cred"> "body" </a>and all paragraphs.</p>
-				<p class="left-align">In addition, all <a class="cred"> "paragraphs" </a> elements have a bottom margin that equals half their computed line-height (10px by default).</p>
+				<p class="left-align">In addition, all <a class="cred"> "paragraphs" </a> elements have a bottom margin that equals half their computed line-height (<a class="cred">10px</a> by default).</p>
 			</section>
 
 			<section>
-				<h4> Bootstrap will style the HTML headings (h1 to h6) in the following way</h4>
-				<img src="images/slides/bootstrap_Typography.jpg" >
+				<h2>Typography</h2>
+				<p>HTML headings (h1 to h6)</h4>
+				<img src="images/slides/bootstrap_typography.png" >
 			</section>
 
 			<section>
-				<h4>small</h4>
-				<p class="left-align">In Bootstrap the HTML <a class="cred"> "small" </a> element is used to create a lighter, secondary text in any heading.</p>
-				<img src="images/slides/bootstrap_Text_small.jpg" >
+				<h4><a class="cred">&lt;small&gt;</a></h4>
+				<p>To create a lighter, <a class="cblue">secondary text</a> in any heading</p>
+				<img src="images/slides/bootstrap_small.png" >
 			</section>
 
 			<section>
-				<h4>mark</h4>
-				<p>Bootstrap will style the HTML <a class="cred"> "mark" </a> element in the following way</p>
-					
- 					<p>Use the mark element to <mark>highlight</mark> text.</p>
-					
+				<h4><a class="cred">&#x3C;mark&#x3E;</a></h4>
+				<p>Use the mark element to <mark>highlight</mark> text.</p>
+				<pre><code data-trim class="html">
+Use the mark element to &lt;mark&gt;highlight&lt;/mark&gt; text.
+				</code></pre>
 			</section>
 
 			<section>
-				<h2>Example</h2>
-				<pre><code data-trim class="hljs" contenteditable>
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;Example&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h1&gt;Highlight Text&lt;/h1&gt;
-		&lt;p&gt;Use the mark element to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+				<h4><a class="cred">Strikethrough / Deleted Text</a></h4>
+				<s>This line of text is meant to be treated as no longer accurate.</s>
+				<del>This line of text is meant to be treated as deleted text.</del>
+				<pre><code data-trim class="html">
+&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;
+&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;
+				</code></pre>
 			</section>
+
+			
 
 			<section>
 				<h4>ABBREVIATIONS</h4>
@@ -351,7 +396,7 @@ maximum-scale=1, user-scalable=no
 
 			<section>
 				<h2>Example</h2>
-				<pre><codedata-trim class="hljs" contenteditable>
+				<pre><code data-trim class="hljs" contenteditable>
 &lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;Abbreviations&lt;/title&gt;
